@@ -36,5 +36,5 @@ popd
 
 # Push stuff
 cd $BUILD_DIR
-$ncftpput -R -v -m -u $CACHEFLY_USERNAME -p $CACHEFLY_PASSWORD ftp.cachefly.com $CACHEFLY_DEST_FOLDER $CACHEFLY_SRC_FOLDER
+$ncftpput -R -v -m -u $CACHEFLY_USERNAME -p $CACHEFLY_PASSWORD ftp.cachefly.com $CACHEFLY_DEST_FOLDER $CACHEFLY_SRC_FOLDER/*
 
