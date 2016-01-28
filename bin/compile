@@ -38,6 +38,9 @@ popd
 
 # Push stuff
 cd $BUILD_DIR
+echo "Preparing files"
+mkdir -p /tmp/ncftp/_src
+cp --recursive --dereference $CACHEFLY_SRC_FOLDER/* /tmp/ncftp/_src/
 echo "Cachefly dest folder is '$CACHEFLY_DEST_FOLDER'";
-$ncftpput -R -v -m -u $CACHEFLY_USERNAME -p $CACHEFLY_PASSWORD ftp.cachefly.com $CACHEFLY_DEST_FOLDER $CACHEFLY_SRC_FOLDER/*
+$ncftpput -R -v -m -u $CACHEFLY_USERNAME -p $CACHEFLY_PASSWORD ftp.cachefly.com $CACHEFLY_DEST_FOLDER /tmp/ncftp/_src/*
 
