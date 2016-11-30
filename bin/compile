@@ -30,7 +30,7 @@ set -e
 mkdir -p /tmp/ncftp
 pushd /tmp/ncftp
 rm -rf *.tar.gz ncftp/
-curl -o ncftp.tar.gz ftp://ftp.ncftp.com/ncftp/binaries/ncftp-3.2.5-linux-x86_64-glibc2.3-export.tar.gz
+curl -o ncftp.tar.gz ftp://ftp.ncftp.com/ncftp/binaries/ncftp-3.2.6-linux-x86_64-glibc2.5-export.tar.gz
 tar xf ncftp.tar.gz
 cd ncftp*/bin
 ncftpput=$(pwd)/ncftpput
